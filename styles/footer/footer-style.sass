@@ -1,0 +1,35 @@
+@import "../general-styles.sass"
+
+//                        footer
+//===============================================================
+.footer
+    background-color: #000
+.container--footer
+    padding: 0
+.footer__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 35px 0
+.copyriting
+    @include font (10px, 400, 12px, 1px, #666666, center, uppercase, 0)
+
+//                        breakpoints
+//===============================================================
+@media (max-width: 768px)
+    .footer__inner
+        padding: 20px 5px
+    .logo__img
+        width: 60%
+@media (max-width: 480px)
+    .footer__inner
+        display: flex
+        flex-direction: column
+        padding: 10px 5px
+    .header__logo
+        margin-bottom: 5px
+    .logo__img
+        display: block
+        margin: 0 auto
+
+

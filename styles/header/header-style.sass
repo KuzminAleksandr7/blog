@@ -1,0 +1,24 @@
+@import "../general-styles.sass"
+
+//                          header
+//===============================================================
+.container--header
+    padding: 0
+.header__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 35px 0
+.nav__link
+    @include font (14px, 400, 24px, 0, #000000, center, none, 20px)
+
+//                        breakpoints
+//===============================================================
+@media (max-width: 768px)
+    .header__inner
+        padding: 20px 5px
+    .logo__img
+        width: 60%
+@media (max-width: 480px)
+    .header__inner
+        padding: 10px 5px
